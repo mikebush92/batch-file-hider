@@ -3,8 +3,8 @@ if not exist "users" mkdir  "users"
 echo "Hello World">users:test.txt
 pause
 
-echo do you want view the file/datastream? (y/n)
-set /p ans="Enter Number:"
+echo do you want view the file/datastream? 
+set /p ans="Enter (y/n):"
 if %ans%==y  (goto 1) else (goto exit)
 
 :1
