@@ -3,13 +3,13 @@ if not exist "users" mkdir  "users"
 echo "Hello World">users:test.txt
 pause
 
-echo to view the file/datastream press 1
+echo do you want view the file/datastream? (y/n)
 set /p ans="Enter Number:"
-if %ans%==1  (goto 1) else (goto exit)
+if %ans%==y  (goto 1) else (goto exit)
 
 :1
-notepad users:test.tx
-pause
+notepad users:test.txt
+exit
 
 :exit
 exit
